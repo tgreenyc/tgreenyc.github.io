@@ -4,10 +4,10 @@
 baseurl: /harmony
 
 # Site live URL
-# url: http://gayan.me
+url: http://blog.mystackrunnethover.com
 
 # Localhost 
-url: http://127.0.0.1:4000  
+# url: http://127.0.0.1:4000  
 
 # Harmony theme configuration. Please change accordingly.
 harmony:
@@ -23,7 +23,7 @@ harmony:
   author: # Author details
     name: Tim Green
     email:
-    url: http://localhost:4000
+    url: http://blog.mystackrunnethover.com
 
   # Google Analytics key, leave blank to ignore
   google_analytics_key: UA-xxxx-x
