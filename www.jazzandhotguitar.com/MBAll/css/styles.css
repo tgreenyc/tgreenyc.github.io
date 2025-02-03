@@ -100,6 +100,24 @@ tr:hover {
     background: var(--table-hover);
 }
 
+/* Make images responsive */
+img {
+    max-width: 100%;  /* Ensures the image never exceeds the width of its container */
+    height: auto;     /* Maintains the aspect ratio */
+    display: block;   /* Removes extra space below inline images */
+}
+
+/* Optionally, center images inside their container */
+.image-container {
+    text-align: center;
+}
+
+/* If images are inside a flex container, ensure they shrink properly */
+img {
+    flex-shrink: 1;
+    object-fit: contain;
+}
+
 /* Responsive Table */
 @media (max-width: 600px) {
     .container {
@@ -127,4 +145,9 @@ tr:hover {
     button {
         margin-top: 10px; /* Adjust button margin on mobile */
     }
+	
+    img {
+        max-width: 100%; /* Ensures images fit small screens */
+        height: auto;     /* Keeps proportions intact */
+    }	
 }
