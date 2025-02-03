@@ -1,0 +1,110 @@
+/* styles.css */
+
+/* Import a readable, modern font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+:root {
+    --text-color: #333;
+    --background-color: #f9f9f9;
+    --primary-color: #0077cc;
+    --secondary-color: #005fa3;
+    --font: 'Inter', sans-serif;
+    --border-color: #ddd;
+    --table-row-alt: #f5f5f5;
+    --table-hover: #eef6ff;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 100px; /* Added margin around the page */
+    padding: 0;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: var(--secondary-color);
+}
+
+/* TABLE STYLES */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background: var(--table-row-alt);
+}
+
+tr:hover {
+    background: var(--table-hover);
+}
+
+/* Responsive Table */
+@media (max-width: 600px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
