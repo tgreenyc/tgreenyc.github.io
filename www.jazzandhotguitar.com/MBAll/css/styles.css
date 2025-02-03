@@ -75,7 +75,7 @@ table {
     margin: 20px 0;
     background: white;
     border-radius: 10px;
-    overflow: hidden;
+    overflow-y: auto;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -102,9 +102,29 @@ tr:hover {
 
 /* Responsive Table */
 @media (max-width: 600px) {
+    .container {
+        margin: 10px;  /* Reduced margin on mobile */
+        padding: 15px; /* Reduced padding on mobile */
+    }
+
     table {
         display: block;
         overflow-x: auto;
         white-space: nowrap;
+    }
+
+    body {
+        margin: 10px;  /* Reduced body margin */
+        padding: 0;
+    }
+
+    /* Optional: Adjust margins for specific elements */
+    h1, h2, h3, p {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    button {
+        margin-top: 10px; /* Adjust button margin on mobile */
     }
 }
